@@ -1,0 +1,49 @@
+{
+  "name": "pure-functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "preshow:coverage": "npm run coverage",
+    "show:coverage": "live-server coverage/lcov-report",
+    "preshow:dist": "npm run build",
+    "show:dist": "live-server dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alina-Gilmutdinova/pure-functions.git"
+  },
+  "author": "Alina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alina-Gilmutdinova/pure-functions/issues"
+  },
+  "homepage": "https://github.com/Alina-Gilmutdinova/pure-functions#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-jest": "^27.4.2",
+    "eslint": "^8.4.0",
+    "jest": "^27.4.3"
+  },
+  "dependencies": {
+    "core-js": "^3.19.3",
+    "css-loader": "^6.5.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "html-loader": "^3.0.1",
+    "html-webpack-plugin": "^5.5.0",
+    "live-server": "^1.2.1",
+    "mini-css-extract-plugin": "^2.4.5",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  }
+}
